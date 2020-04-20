@@ -1,4 +1,5 @@
 class School
+  attr_writer 
   attr_reader :name, :roster
   ROSTER = {}
   def initialize(name)
@@ -6,8 +7,10 @@ class School
   @roster = {}
 end
   def add_student(name,grade)
-    @name = name
-    @grade = grade 
-
+    if @roster[grade]
+      @roster[grade]<<[name]
+    else
+      @roster[grade] = []
+      
 end
 end
