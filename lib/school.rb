@@ -11,6 +11,6 @@ end
       @roster[grade]<<[name]
     else
       @roster[grade] = []
-
+      @roster[grade] << student_name
 end
 end
