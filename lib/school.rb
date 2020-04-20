@@ -1,5 +1,5 @@
 class School
-  attr_writer 
+  attr_writer
   attr_reader :name, :roster
   ROSTER = {}
   def initialize(name)
@@ -11,6 +11,6 @@ end
       @roster[grade]<<[name]
     else
       @roster[grade] = []
-      
+
 end
 end
