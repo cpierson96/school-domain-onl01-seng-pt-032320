@@ -3,9 +3,9 @@ class School
   attr_reader :name, :roster
   ROSTER = {}
   def initialize(name)
-  @name = name
-  @roster = {}
-end
+    @name = name
+    @roster = {}
+  end
   def add_student(name,grade)
     if @roster[grade]
       @roster[grade]<< name 
