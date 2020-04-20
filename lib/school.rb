@@ -21,3 +21,4 @@ class School
     @roster.each do |grade, name|
   end
 end
+end 
